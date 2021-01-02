@@ -12,6 +12,12 @@ function mousePressed() {
   particles.push(p);
 }
 
+function keyPressed() {
+  if (key == ' ') {
+    particles.splice(0, 1)
+  }
+}
+
 function draw() {
   background(51);
   
