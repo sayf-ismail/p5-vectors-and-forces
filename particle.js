@@ -1,10 +1,13 @@
-function Particle() {
-  this.pos = createVector(width/2, height/2);
+function Particle(x, y, m) {
+  this.pos = createVector(x, y);
   this.vel = createVector(0,0);
   this.acc = createVector(0,0);
+  this.mass = m;
   
   this.applyForce = function (force) {
-    this.acc = force;
+    var f = force.copy();
+    f.div(this.mass)
+    this.acc.add(force);
     
  
   }
@@ -18,7 +21,7 @@ function Particle() {
   
   this.display = function() {
     fill(255);
-    ellipse(this.pos.x, this.pos.y, 48, 48)
+    ellipse(this.pos.x, this.pos.y, this.mass*10, this.mass*10)
   }
   
   this.edges = function() {
