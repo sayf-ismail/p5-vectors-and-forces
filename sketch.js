@@ -3,8 +3,13 @@ var particles = [];
 function setup() {
   createCanvas(640, 360);
   for(var i=0; i < 10; i++) {
-  particles[i] = new Particle(random(width), 100, random(2,4));
+  // particles[i] = new Particle(random(width), 100, random(2,4));
   }
+}
+
+function mousePressed() {
+  var p = new Particle(random(width), 100, random(2,4));
+  particles.push(p);
 }
 
 function draw() {
