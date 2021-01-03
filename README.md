@@ -1,6 +1,6 @@
 # p5-vectors-and-forces
 
-As an introduction to the Javascript extension p5.js, I tried out this course by D. Shiffman that introduces students to creating visuals.
+As an introduction to the Javascript extension p5.js, I tried out this course by D. Shiffman that introduces students to creating visuals and a physics engine.
 
 #### Project Link
 The project can be found here: https://sayf-ismail.github.io/p5-vectors-and-forces/
